@@ -16,7 +16,7 @@
             <section class="post-meta">
                 {{#author}}<a href="{{url}}">{{name}}</a>{{/author}}
                 <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}"> {{date format="MMM Do YYYY"}}</time>
-                <span class="post-tags">{{tags prefix="Tags: "}}</span>
+                <span class="post-tags">{{tags prefix="Теги: "}}</span>
             </section>
         </header>
 
@@ -41,7 +41,7 @@
                 {{#if bio}}
                     <p>{{bio}}</p>
                 {{else}}
-                    <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                    <p><a href="{{url}}">Показать</a> ещё посты этого автора.</p>
                 {{/if}}
                 <div class="author-meta">
                     {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
@@ -52,7 +52,7 @@
         {{/author}}
 
             <section class="share">
-                <h4>Поделитьяс постом</h4>
+                <h4>Поделиться постом</h4>
                 <a class="icon-twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
